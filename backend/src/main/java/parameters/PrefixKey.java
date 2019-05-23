@@ -1,4 +1,4 @@
-package model;
+package parameters;
 
 public class PrefixKey {
     private String prefix1;

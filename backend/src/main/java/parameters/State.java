@@ -1,4 +1,4 @@
-package model;
+package parameters;
 
 
 public class State {

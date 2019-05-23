@@ -1,11 +1,10 @@
 package repository;
 
 import markovModel.MarkovModel;
-import model.PrefixKey;
-import model.State;
+import parameters.PrefixKey;
+import parameters.State;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class PredictionRepository {
     private MarkovModel markovModel;
@@ -16,6 +15,9 @@ public class PredictionRepository {
 
     public List<State> getPrediction(PrefixKey prefix){
         List<State> topPredictions = markovModel.getPredictibilityTransitions().get(prefix);
+
+        if(topPredictions == null)
+            return null;
 
         if(topPredictions.size() < 3)
             return topPredictions;

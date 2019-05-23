@@ -1,7 +1,7 @@
 package markovModel;
 
-import model.PrefixKey;
-import model.State;
+import parameters.PrefixKey;
+import parameters.State;
 
 import java.io.*;
 import java.util.*;

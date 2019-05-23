@@ -1,7 +1,6 @@
-import markovModel.DataProcessor;
 import markovModel.MarkovModel;
-import model.PrefixKey;
-import model.State;
+import parameters.PrefixKey;
+import parameters.State;
 import repository.PredictionRepository;
 
 import java.util.List;
@@ -10,7 +9,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-        MarkovModel mk = new MarkovModel("D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\trainingData.txt");
+        MarkovModel mk = new MarkovModel("D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\doriangray.txt");
         mk.trainMarkovModel();
 
         PredictionRepository pr = new PredictionRepository(mk);
@@ -28,7 +27,8 @@ public class Main {
             prefixKey.setPrefix2(word);
 
             predictions = pr.getPrediction(prefixKey);
-            predictions.forEach(prediction -> System.out.print(prediction.getValue()+" "));
+            if(predictions != null)
+                predictions.forEach(prediction -> System.out.print(prediction.getValue()+" "));
         }
     }
 }
