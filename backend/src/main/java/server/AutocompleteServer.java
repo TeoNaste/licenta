@@ -14,6 +14,7 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("/api")
 public class AutocompleteServer {
+
     private MarkovModel markovModel = new MarkovModel("D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\trainingData.txt");
     private PredictionRepository predictionRepository = new PredictionRepository(markovModel);
 

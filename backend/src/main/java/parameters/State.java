@@ -42,6 +42,28 @@ public class State {
         this.probability = probability;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this)
+            return true;
+
+        if(!(obj instanceof State))
+            return false;
+
+        State state = (State) obj;
+
+        return state.value.equals(this.value);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + value.hashCode();
+        result = 31 * result + probability.hashCode();
+        result = 31 * result + count;
+        return result;
+    }
+
 
 
 }
