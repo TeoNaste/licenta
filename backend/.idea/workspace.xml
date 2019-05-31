@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09a889e1-3a14-497c-a042-0000bf8c2746" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dataset2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/startingData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ModelLicenta.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelLicenta.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/largerTestData" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/testData.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PrefixKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parameters/PrefixKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parameters/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bd.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/largeData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trainingData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/doriangray.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/doriangray.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/largeData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/doriangray.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriangray.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/markovModel/MarkovModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/markovModel/MarkovModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/PrefixKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parameters/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parameters/State.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/repository/PredictionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/PredictionRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/AutocompleteServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/AutocompleteServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/trainingData.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/licenta-front" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/licenta-front" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -75,7 +62,7 @@
     <session id="-1154644425">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.159" value="1" />
@@ -88,10 +75,12 @@
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,18 +91,19 @@
           <entry key="MarkovModel" value="1" />
           <entry key="config" value="1" />
           <entry key="fxml" value="1" />
-          <entry key="java" value="37" />
+          <entry key="java" value="41" />
+          <entry key="largerTestData" value="1" />
           <entry key="sql" value="1" />
-          <entry key="txt" value="6" />
-          <entry key="users" value="2" />
+          <entry key="txt" value="10" />
+          <entry key="users" value="3" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="2" />
-          <entry key="JAVA" value="37" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Database Element" value="3" />
+          <entry key="JAVA" value="41" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="Scratch" value="1" />
           <entry key="UML" value="4" />
           <entry key="XML" value="3" />
@@ -121,21 +111,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="10" />
+          <entry key="cell" value="30" />
           <entry key="config" value="47" />
           <entry key="dummy" value="21" />
-          <entry key="java" value="5154" />
+          <entry key="java" value="5791" />
+          <entry key="largerTestData" value="2" />
           <entry key="sql" value="43" />
-          <entry key="txt" value="404" />
+          <entry key="txt" value="498" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5154" />
-          <entry key="PLAIN_TEXT" value="472" />
+          <entry key="JAVA" value="5791" />
+          <entry key="PLAIN_TEXT" value="568" />
           <entry key="SQL" value="43" />
-          <entry key="Scratch" value="10" />
+          <entry key="Scratch" value="30" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -146,8 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/parameters/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="714">
+              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/parameters/PrefixKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -155,20 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1315">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="201">
+              <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,8 +167,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/doriangray.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-140838">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testData.txt">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,11 +256,15 @@
         <option value="$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/largeData.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/dataset2.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/markovModel/operations/MarkovModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parameters/State.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testData.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/largerTestData" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/doriangray.txt" />
       </list>
     </option>
   </component>
@@ -269,7 +303,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -332,30 +366,6 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="markovModel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="text_completion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parameters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="text_completion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="text_completion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -372,7 +382,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558567697204" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559307027792" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="D:/an2/sem II/MPP/FestivalMuzica - Networking - REST" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -452,17 +462,28 @@
       <workItem from="1558283464950" duration="1560000" />
       <workItem from="1558374033673" duration="826000" />
       <workItem from="1558429578280" duration="4032000" />
-      <workItem from="1558536237466" duration="13777000" />
+      <workItem from="1558536237466" duration="21728000" />
+      <workItem from="1559215874798" duration="596000" />
+      <workItem from="1559300048955" duration="917000" />
     </task>
+    <task id="LOCAL-00001" summary="front - main display&#10;back - weak testing of model">
+      <created>1559307076814</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559307076814</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68721000" />
+    <option name="totallyTimeSpent" value="78185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.40031397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16490166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,8 +493,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294509" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26622295" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44259566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26557377" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38688526" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -492,11 +513,47 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.18681319" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="7" weight="0.1860817" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1762481" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294509" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26557377" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38688526" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32786885" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.1860817" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -504,7 +561,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="front - main display&#10;back - weak testing of model" />
+    <option name="LAST_COMMIT_MESSAGE" value="front - main display&#10;back - weak testing of model" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((HashMap)predictibilityTransitions).entrySet().toArray()[1]" custom="java.util.HashMap" />
@@ -533,32 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0888a326-48ec-412a-8bf5-955ad5360903/schema/main/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/trainingData.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/trainingData.txt" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -573,20 +619,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bd.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bd.config" />
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,30 +641,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/doriangray.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1785" />
       </provider>
     </entry>
     <entry file="uml://JavaScript-modules-diagram/D:/an3/licenta/text_completion/backend/src/main/java/parameters;D:/an3/licenta/text_completion/backend/src/main/java/markovModel;">
@@ -638,11 +657,12 @@
           <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="533.5" y="231.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="534.0" y="232.0" />
           <SelectedNodes />
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
@@ -677,7 +697,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.8165784832451499" x="247.0" y="301.5" />
+          <settings layout="Hierarchic Group" zoom="0.8165784832451499" x="247.0" y="302.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -700,7 +720,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="131.5" y="125.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="132.0" y="126.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -720,7 +740,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="61.0" y="88.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="61.0" y="89.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -728,47 +748,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parameters/PrefixKey.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/largerTestData">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/parameters/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="714">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/parameters/PrefixKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1315">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="544">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="391">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0888a326-48ec-412a-8bf5-955ad5360903/schema/main/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testData.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/doriangray.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140838">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
