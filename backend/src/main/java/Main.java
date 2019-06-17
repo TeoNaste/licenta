@@ -1,18 +1,14 @@
 import markovModel.MarkovModel;
-import model.Message;
-import repository.JdbcUtils;
-import repository.MessageRepository;
-import repository.PredictionRepository;
-import repository.UserRepository;
+
 
 public class Main {
 
     public static void main(String[] args){
 //        DataProcessor.generateDataFromFile("D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\thegoodplace.txt");
         MarkovModel mk = new MarkovModel();
-//        mk.trainMarkovModel();
+        mk.trainMarkovModel();
+        mk.saveToDB();
 //
-        MessageRepository m = new MessageRepository();
 
 //        Double evaluation = mk.testModel("D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\generatedTestData.txt");
 //        System.out.println(evaluation);

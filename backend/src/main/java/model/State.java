@@ -1,21 +1,60 @@
-package markovModel.parameters;
+package model;
 
 
-public class State {
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table
+public class State implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String value;
     private Double probability;
     private int count;
+    @ManyToOne
+    @JoinColumns({
+            @JoinColumn(name = "prefix1", referencedColumnName = "prefix1"),
+            @JoinColumn(name = "prefix2", referencedColumnName = "prefix2")
+    })
+    private Prefix prefix;
 
     public State(String value, Double probability,int count) {
         this.value = value;
         this.probability = probability;
         this.count = count;
+        this.prefix = new Prefix();
+    }
+
+    public State(String value, Double probability, int count, Prefix prefix) {
+        this.value = value;
+        this.probability = probability;
+        this.count = count;
+        this.prefix = prefix;
     }
 
     public State(String value) {
         this.value = value;
         this.probability = 1.0;
         this.count = 1;
+        this.prefix = new Prefix();
+    }
+
+    public Prefix getPrefix() {
+        return prefix;
+    }
+
+    public void setPrefix(Prefix prefix) {
+        this.prefix = prefix;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getCount() {

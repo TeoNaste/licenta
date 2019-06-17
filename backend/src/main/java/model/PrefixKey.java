@@ -1,6 +1,11 @@
-package markovModel.parameters;
+package model;
 
-public class PrefixKey {
+import javax.persistence.Embeddable;
+import java.io.Serializable;
+
+@Embeddable
+public class PrefixKey implements Serializable {
+
     private String prefix1;
     private String prefix2;
 

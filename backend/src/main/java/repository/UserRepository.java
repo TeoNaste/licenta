@@ -1,70 +1,52 @@
 package repository;
 
 import model.User;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.Optional;
 
 
 @Component
-public class UserRepository implements Repository<Integer, User> {
-    private JdbcUtils dbUtils;
+public class UserRepository implements IRepository<Integer, User> {
 
     public UserRepository() {
-        this.dbUtils = new JdbcUtils();
-        initialize();
     }
 
     @Override
     public int size() {
-        return 0;
+        return Repository.getAll(User.class).size();
     }
 
     @Override
-    public boolean save(User entity) {
-        return false;
+    public void save(User entity) {
+        Repository.add(User.class,entity);
     }
 
     @Override
-    public boolean delete(Integer integer) {
-        return false;
+    public void delete(Integer integer) {
+        Optional<User> optional = Repository.get(User.class,integer);
+        optional.ifPresent(User -> Repository.delete(User.class, User));
     }
 
     @Override
-    public boolean update(User entity) {
-        return false;
+    public void update(Integer id, User entity) {
+        Optional<User> optional = Repository.get(User.class,id);
+        optional.ifPresent(User -> Repository.update(User.class, User,entity));
     }
 
     @Override
-    public User findOne(Integer integer) {
-        return null;
+    public User findOne(Integer id) {
+        Optional<User> optional = Repository.get(User.class,id);
+        return optional.orElse(null);
     }
 
     @Override
     public Iterable<User> findAll() {
-        return null;
+
+        List<User> users = Repository.getAll(User.class);
+
+        return users;
     }
 
-    static SessionFactory sessionFactory;
-    static void initialize() {
-        // A SessionFactory is set up once for an application!
-        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure() // configures settings from hibernate.cfg.xml
-                .build();
-        try {
-            sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
-        }
-        catch (Exception e) {
-            StandardServiceRegistryBuilder.destroy( registry );
-        }
-    }
-
-    static void close(){
-        if ( sessionFactory != null ) {
-            sessionFactory.close();
-        }
-
-    }
 }

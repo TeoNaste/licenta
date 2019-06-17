@@ -1,8 +1,11 @@
 package markovModel;
 
+import model.Prefix;
 import org.springframework.stereotype.Component;
-import markovModel.parameters.PrefixKey;
-import markovModel.parameters.State;
+import model.PrefixKey;
+import model.State;
+import repository.PrefixRepository;
+import repository.StateRepository;
 
 import java.io.*;
 import java.util.*;
@@ -13,12 +16,16 @@ public class MarkovModel {
     private String filename;
     private Map<PrefixKey,List<State>> predictibilityTransitions;
     private Map<PrefixKey, Integer> prefixCount;
+    private StateRepository stateRepository;
+    private PrefixRepository prefixRepository;
 
     public MarkovModel() {
-//        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\doriangray.txt";
-        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\generatedDataSet.txt";
+        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\smol.txt";
+//        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\generatedDataSet.txt";
         predictibilityTransitions = new HashMap<>();
         prefixCount = new HashMap<>();
+        stateRepository = new StateRepository();
+        prefixRepository = new PrefixRepository();
     }
 
     public void addState(final PrefixKey prefix, String value){
@@ -130,18 +137,6 @@ public class MarkovModel {
         return topPredictions.subList(0,5);
     }
 
-    public List<State> getTop8Prediction(PrefixKey prefix){
-        List<State> topPredictions = predictibilityTransitions.get(prefix);
-
-        if(topPredictions == null)
-            return null;
-
-        if(topPredictions.size() < 8)
-            return topPredictions;
-
-        return topPredictions.subList(0,8);
-    }
-
     public Double testModel(String dataFile){
         File file = new File(dataFile);
         Double countWords = 0.0;
@@ -187,5 +182,23 @@ public class MarkovModel {
 
         return rigthPredictions/countWords * 100;
     }
+
+    public void saveToDB(){
+        this.predictibilityTransitions.forEach((prefixKey, states) -> {
+            int prefixCount = this.prefixCount.get(prefixKey);
+            Prefix prefix = new Prefix(prefixKey,prefixCount);
+
+            states.forEach(state -> {
+                prefix.getStates().add(state);
+                state.setPrefix(prefix);
+                if(prefixRepository.findOne(prefixKey) == null)
+                    prefixRepository.save(prefix);
+                else
+                    prefixRepository.update(prefixKey,prefix);
+             });
+        });
+    }
+
+
 
 }

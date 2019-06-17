@@ -1,67 +1,50 @@
 package repository;
 
 import model.Message;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.springframework.stereotype.Component;
 
-public class MessageRepository implements Repository<Integer, Message> {
-    private JdbcUtils dbUtils;
+import java.util.List;
+import java.util.Optional;
 
-    public MessageRepository() {
-        this.dbUtils = new JdbcUtils();
-        initialize();
-    }
+@Component
+public class MessageRepository implements IRepository<Integer, Message> {
+
+    public MessageRepository() { }
 
     @Override
     public int size() {
-        return 0;
+        return Repository.getAll(Message.class).size();
     }
 
     @Override
-    public boolean save(Message entity) {
-        return false;
+    public void save(Message entity) {
+        Repository.add(Message.class,entity);
     }
 
     @Override
-    public boolean delete(Integer integer) {
-        return false;
+    public void delete(Integer integer) {
+        Optional<Message> optional = Repository.get(Message.class,integer);
+        optional.ifPresent(Message -> Repository.delete(Message.class, Message));
     }
 
     @Override
-    public boolean update(Message entity) {
-        return false;
+    public void update(Integer id, Message entity) {
+        Optional<Message> optional = Repository.get(Message.class,id);
+        optional.ifPresent(Message -> Repository.update(Message.class, Message,entity));
     }
 
     @Override
-    public Message findOne(Integer integer) {
-        return null;
+    public Message findOne(Integer id) {
+        Optional<Message> optional = Repository.get(Message.class,id);
+        return optional.orElse(null);
     }
 
     @Override
     public Iterable<Message> findAll() {
-        return null;
+
+        List<Message> messages = Repository.getAll(Message.class);
+
+        return messages;
     }
 
-    static SessionFactory sessionFactory;
-    static void initialize() {
-        // A SessionFactory is set up once for an application!
-        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure() // configures settings from hibernate.cfg.xml
-                .build();
-        try {
-            sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
-        }
-        catch (Exception e) {
-            StandardServiceRegistryBuilder.destroy( registry );
-        }
-    }
-
-    static void close(){
-        if ( sessionFactory != null ) {
-            sessionFactory.close();
-        }
-
-    }
 }
