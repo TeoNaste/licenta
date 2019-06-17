@@ -1,19 +1,22 @@
 package markovModel;
 
-import parameters.PrefixKey;
-import parameters.State;
+import org.springframework.stereotype.Component;
+import markovModel.parameters.PrefixKey;
+import markovModel.parameters.State;
 
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Component
 public class MarkovModel {
     private String filename;
     private Map<PrefixKey,List<State>> predictibilityTransitions;
     private Map<PrefixKey, Integer> prefixCount;
 
-    public MarkovModel(String filename) {
-        this.filename = filename;
+    public MarkovModel() {
+//        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\doriangray.txt";
+        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\generatedDataSet.txt";
         predictibilityTransitions = new HashMap<>();
         prefixCount = new HashMap<>();
     }
@@ -48,6 +51,8 @@ public class MarkovModel {
 
     public void trainMarkovModel(){
         File file = new File(filename);
+        String prefix1 ="",prefix2 = "";
+        Boolean endOfSentence = false;
 
         BufferedReader br = null;
         try {
@@ -59,26 +64,24 @@ public class MarkovModel {
                 int lineLen = words.length;
                 for(int i=0;i < lineLen; i++){
                     String currentWord = words[i];
-                    if(i==0){
-                        //first word
-                        PrefixKey prefix = new PrefixKey();
-                        addState(prefix,currentWord);
-                    }else{
-                        String prevWord = words[i-1];
-//                        if(i==words.length-1) {
-//                            //sentence end
-//                            PrefixKey prefix = new PrefixKey(prevWord, currentWord);
-//                            addState(prefix, "$END$");
-//                        }else
-                        if(i==1){
-                            //second word
-                            PrefixKey prefix = new PrefixKey(prevWord);
-                            addState(prefix, currentWord);
-                        }else{
-                            String prevPrevWord = words[i-2];
-                            PrefixKey prefix = new PrefixKey(prevPrevWord, prevWord);
-                            addState(prefix,currentWord);
-                        }
+                    if(currentWord.matches(".*[.?!]")){
+                        //end of sentence
+                        endOfSentence = true;
+                        currentWord = currentWord.replaceAll("[.?!]","");
+                    }
+                    if(currentWord.equals(""))
+                        continue;
+
+                    PrefixKey prefix = new PrefixKey(prefix1, prefix2);
+                    addState(prefix,currentWord);
+
+                    if(endOfSentence){
+                        prefix1 = "";
+                        prefix2 = "";
+                        endOfSentence = false;
+                    }else {
+                        prefix1 = prefix2;
+                        prefix2 = currentWord;
                     }
                 }
 
@@ -103,9 +106,86 @@ public class MarkovModel {
 
     }
 
+    public List<State> getTop3Prediction(PrefixKey prefix){
+        List<State> topPredictions = predictibilityTransitions.get(prefix);
 
+        if(topPredictions == null)
+            return null;
 
-    public Map<PrefixKey,List<State>> getPredictibilityTransitions(){
-        return predictibilityTransitions;
+        if(topPredictions.size() < 3)
+            return topPredictions;
+
+        return topPredictions.subList(0,3);
     }
+
+    public List<State> getTop5Prediction(PrefixKey prefix){
+        List<State> topPredictions = predictibilityTransitions.get(prefix);
+
+        if(topPredictions == null)
+            return null;
+
+        if(topPredictions.size() < 5)
+            return topPredictions;
+
+        return topPredictions.subList(0,5);
+    }
+
+    public List<State> getTop8Prediction(PrefixKey prefix){
+        List<State> topPredictions = predictibilityTransitions.get(prefix);
+
+        if(topPredictions == null)
+            return null;
+
+        if(topPredictions.size() < 8)
+            return topPredictions;
+
+        return topPredictions.subList(0,8);
+    }
+
+    public Double testModel(String dataFile){
+        File file = new File(dataFile);
+        Double countWords = 0.0;
+        Double rigthPredictions = 0.0;
+
+        BufferedReader br = null;
+        PrefixKey prefixKey = new PrefixKey();
+        Boolean endOfSentence = false;
+        try {
+            br = new BufferedReader(new FileReader(file));
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] words = DataProcessor.removePunctuation(line).split(" ");
+                countWords += words.length;
+
+                for (String word : words ){
+                    List<State> predictions = getTop3Prediction(prefixKey);
+
+                    if(word.matches(".*[.?!]")){
+                        endOfSentence = true;
+                        word = word.replaceAll("[.?!]","");
+                    }
+
+                    State currentState = new State(word);
+                    if(predictions != null && predictions.contains(currentState))
+                        rigthPredictions ++;
+
+                    if(endOfSentence) {
+                        prefixKey.setPrefix1("");
+                        prefixKey.setPrefix2("");
+                        endOfSentence = false;
+                    }else {
+                        prefixKey.setPrefix1(prefixKey.getPrefix2());
+                        prefixKey.setPrefix2(word);
+                    }
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return rigthPredictions/countWords * 100;
+    }
+
 }

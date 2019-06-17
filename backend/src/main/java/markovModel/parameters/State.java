@@ -1,4 +1,4 @@
-package parameters;
+package markovModel.parameters;
 
 
 public class State {

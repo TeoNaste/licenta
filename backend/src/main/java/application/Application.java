@@ -1,8 +1,10 @@
+package application;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan({"server"})
+@ComponentScan({"server","repository","markovModel"})
 @SpringBootApplication
 public class Application {
 

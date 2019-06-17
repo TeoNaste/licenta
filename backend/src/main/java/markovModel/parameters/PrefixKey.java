@@ -1,4 +1,4 @@
-package parameters;
+package markovModel.parameters;
 
 public class PrefixKey {
     private String prefix1;

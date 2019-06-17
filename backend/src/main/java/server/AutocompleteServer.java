@@ -1,31 +1,33 @@
 package server;
 
-import markovModel.MarkovModel;
-import parameters.PrefixKey;
-import parameters.State;
-import org.springframework.ui.Model;
-import org.springframework.stereotype.Controller;
+import com.google.gson.Gson;
+import org.springframework.beans.factory.annotation.Autowired;
+import markovModel.parameters.PrefixKey;
+import markovModel.parameters.State;
 import org.springframework.web.bind.annotation.*;
 import repository.PredictionRepository;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-@Controller
+@RestController
 @CrossOrigin
 @RequestMapping("/api")
 public class AutocompleteServer {
 
-    private MarkovModel markovModel = new MarkovModel("D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\trainingData.txt");
-    private PredictionRepository predictionRepository = new PredictionRepository(markovModel);
+    @Autowired
+    private PredictionRepository predictionRepository;
 
     @GetMapping("/greeting")
-    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
-        return "greeting";
+    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name) {
+        Gson gson = new Gson();
+        return gson.toJson("Hello");
     }
 
     @RequestMapping(method = RequestMethod.POST)
     public List<State> getPredictions(@RequestBody PrefixKey prefixKey){
-        return predictionRepository.getPrediction(prefixKey);
+//        return predictionRepository.getTop3Prediction(prefixKey);
+        return new ArrayList<>();
     }
 }
