@@ -2,10 +2,13 @@ package repository;
 
 import model.Prefix;
 import model.PrefixKey;
+import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class PrefixRepository implements IRepository<PrefixKey, Prefix> {
     @Override
     public int size() {
@@ -30,6 +33,7 @@ public class PrefixRepository implements IRepository<PrefixKey, Prefix> {
     }
 
     @Override
+    @Transactional
     public Prefix findOne(PrefixKey id) {
         Optional<Prefix> optional = Repository.get(Prefix.class,id);
         return optional.orElse(null);

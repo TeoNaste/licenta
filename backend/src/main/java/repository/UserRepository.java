@@ -1,10 +1,12 @@
 package repository;
 
+import model.MessageStatus;
 import model.User;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 
 @Component
@@ -47,6 +49,16 @@ public class UserRepository implements IRepository<Integer, User> {
         List<User> users = Repository.getAll(User.class);
 
         return users;
+    }
+
+    public User getUserByName(String username){
+        Predicate<User> query = (user -> user.getUsername().equals(username));
+
+        Optional<User> messages = Repository.findObj(User.class,query);
+
+        if(messages.isPresent())
+            return messages.get();
+        return null;
     }
 
 }

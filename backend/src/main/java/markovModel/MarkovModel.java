@@ -1,9 +1,12 @@
 package markovModel;
 
+import model.Accuracy;
 import model.Prefix;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import model.PrefixKey;
 import model.State;
+import repository.AccuracyRepository;
 import repository.PrefixRepository;
 import repository.StateRepository;
 
@@ -16,16 +19,17 @@ public class MarkovModel {
     private String filename;
     private Map<PrefixKey,List<State>> predictibilityTransitions;
     private Map<PrefixKey, Integer> prefixCount;
-    private StateRepository stateRepository;
     private PrefixRepository prefixRepository;
+    private AccuracyRepository accuracyRepository;
+
 
     public MarkovModel() {
-        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\smol.txt";
-//        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\generatedDataSet.txt";
+//        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\startingSet.txt";
+        this.filename = "D:\\an3\\licenta\\text_completion\\backend\\src\\main\\resources\\generatedDataSet.txt";
         predictibilityTransitions = new HashMap<>();
         prefixCount = new HashMap<>();
-        stateRepository = new StateRepository();
         prefixRepository = new PrefixRepository();
+        accuracyRepository = new AccuracyRepository();
     }
 
     public void addState(final PrefixKey prefix, String value){
@@ -59,7 +63,7 @@ public class MarkovModel {
     public void trainMarkovModel(){
         File file = new File(filename);
         String prefix1 ="",prefix2 = "";
-        Boolean endOfSentence = false;
+        boolean endOfSentence = false;
 
         BufferedReader br = null;
         try {
@@ -137,6 +141,18 @@ public class MarkovModel {
         return topPredictions.subList(0,5);
     }
 
+    public List<State> getTop8Prediction(PrefixKey prefix){
+        List<State> topPredictions = predictibilityTransitions.get(prefix);
+
+        if(topPredictions == null)
+            return null;
+
+        if(topPredictions.size() < 8)
+            return topPredictions;
+
+        return topPredictions.subList(0,8);
+    }
+
     public Double testModel(String dataFile){
         File file = new File(dataFile);
         Double countWords = 0.0;
@@ -180,7 +196,14 @@ public class MarkovModel {
             e.printStackTrace();
         }
 
-        return rigthPredictions/countWords * 100;
+        Accuracy accuracy = new Accuracy();
+        accuracy.setRightPredictions(rigthPredictions);
+        accuracy.setWordsCount(countWords);
+        accuracy.setAccuracy(rigthPredictions/countWords * 100);
+
+        accuracyRepository.save(accuracy);
+
+        return accuracy.getAccuracy();
     }
 
     public void saveToDB(){

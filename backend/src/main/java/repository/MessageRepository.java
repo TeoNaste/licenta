@@ -1,10 +1,12 @@
 package repository;
 
 import model.Message;
+import model.MessageStatus;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 @Component
 public class MessageRepository implements IRepository<Integer, Message> {
@@ -44,6 +46,22 @@ public class MessageRepository implements IRepository<Integer, Message> {
 
         List<Message> messages = Repository.getAll(Message.class);
 
+        return messages;
+    }
+
+    public List<Message> getMessagesByUser(Integer idUser){
+        Predicate<Message> query = (message -> message.getSender().getId() == idUser
+            && message.getStatus() == MessageStatus.SUCCESFUL);
+
+    List<Message> messages = Repository.filterAll(Message.class,query);
+        return messages;
+}
+
+    public List<Message> getMessagesForUser(Integer idUser){
+        Predicate<Message> query = (message -> message.getReceiver().getId() == idUser
+                && message.getStatus() == MessageStatus.SUCCESFUL);
+
+        List<Message> messages = Repository.filterAll(Message.class,query);
         return messages;
     }
 

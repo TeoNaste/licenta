@@ -1,14 +1,12 @@
 package server;
 
-import com.google.gson.Gson;
+import model.Accuracy;
+import modelDTO.AccuracyDTO;
+import modelDTO.PrefixDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import model.PrefixKey;
-import model.State;
 import org.springframework.web.bind.annotation.*;
-import repository.PredictionRepository;
+import service.PredictionService;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @CrossOrigin
@@ -16,17 +14,24 @@ import java.util.List;
 public class AutocompleteServer {
 
     @Autowired
-    private PredictionRepository predictionRepository;
+    private PredictionService predictionService;
 
-    @GetMapping("/greeting")
-    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name) {
-        Gson gson = new Gson();
-        return gson.toJson("Hello");
+
+    @RequestMapping(value = "/predictions",method = RequestMethod.POST)
+    @ResponseBody
+    public PrefixDTO getPredictions(@RequestBody PrefixDTO prefixKey){
+        return predictionService.getPrediction(prefixKey);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public List<State> getPredictions(@RequestBody PrefixKey prefixKey){
-//        return predictionRepository.getTop3Prediction(prefixKey);
-        return new ArrayList<>();
+    @RequestMapping(value = "/predictions/update",method = RequestMethod.PUT)
+    @ResponseBody
+    public void updateModel(@RequestBody String text){
+        predictionService.updateStatesProbability(text);
+    }
+
+    @RequestMapping(value = "/predictions/accuracy",method = RequestMethod.POST)
+    @ResponseBody
+    public Accuracy updateAccuracy(@RequestBody AccuracyDTO accuracy){
+        return predictionService.updateAccuracy(accuracy);
     }
 }

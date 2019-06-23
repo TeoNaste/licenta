@@ -18,6 +18,7 @@ public class Repository {
             .addAnnotatedClass(Message.class)
             .addAnnotatedClass(Prefix.class)
             .addAnnotatedClass(State.class)
+            .addAnnotatedClass(Accuracy.class)
             .buildSessionFactory();
 
     public Repository() {

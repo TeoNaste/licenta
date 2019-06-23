@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan({"server","repository","markovModel"})
+@ComponentScan({"server","repository","markovModel", "service","modelDTO","converters"})
 @SpringBootApplication
 public class Application {
 

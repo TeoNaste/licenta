@@ -13,7 +13,7 @@ public class Prefix implements Serializable {
     @EmbeddedId
     private PrefixKey prefixKey;
     private int count;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumns({
             @JoinColumn(name = "prefix1",referencedColumnName = "prefix1"),
             @JoinColumn(name = "prefix2",referencedColumnName = "prefix2")

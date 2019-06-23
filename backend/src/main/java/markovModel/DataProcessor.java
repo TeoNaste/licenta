@@ -6,7 +6,7 @@ public class DataProcessor {
 
     public static String removePunctuation(String sentence){
        return removeShortcuts(sentence)
-               .replaceAll("[,;:{}()*\"’“”]"," ")
+               .replaceAll("[,;:{}()*\"’“”-]"," ")
                .replaceAll("( )( )*"," ")
                .replaceAll("(\\[.*\\])","");
     }

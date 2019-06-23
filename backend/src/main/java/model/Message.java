@@ -1,8 +1,6 @@
 package model;
 
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
 
 import java.io.Serializable;
@@ -28,8 +26,7 @@ public class Message implements Serializable {
     private byte[] attachement;
     private MessageStatus status;
 
-    public Message() {
-    }
+    public Message() { }
 
     public Message(User sender, User receiver, String subject, String text, Date date, byte[] attachement, MessageStatus status) {
         this.sender = sender;

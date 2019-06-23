@@ -20,7 +20,10 @@ public class State implements Serializable {
     })
     private Prefix prefix;
 
-    public State(String value, Double probability,int count) {
+    public State() {
+    }
+
+    public State(String value, Double probability, int count) {
         this.value = value;
         this.probability = probability;
         this.count = count;
