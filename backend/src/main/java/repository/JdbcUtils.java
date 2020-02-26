@@ -18,7 +18,7 @@ public class JdbcUtils {
 
     private Connection getNewConnection(){
         String driver ="org.sqlite.JDBC";
-        String url = "jdbc:sqlite:D:\\an3\\licenta\\SpeedyTalk.db";
+        String url = "jdbc:sqlite:SpeedyTalk.db";
 
         Connection con=null;
         try {

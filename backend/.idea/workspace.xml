@@ -2,63 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09a889e1-3a14-497c-a042-0000bf8c2746" name="Default Changelist" comment="front - main display&#10;back - weak testing of model">
-      <change afterPath="$PROJECT_DIR$/src/main/java/converters/MessageConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converters/PrefixConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converters/StateConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Accuracy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelDTO/AccuracyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelDTO/MessageReceivedDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelDTO/PrefixDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelDTO/StateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/AccuracyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/MessageServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/PredictionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/onedayatatime.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ModelLicenta.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelLicenta.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0888a326-48ec-412a-8bf5-955ad5360903.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0888a326-48ec-412a-8bf5-955ad5360903/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LucrareLicenta.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../LucrareLicenta.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LucrareLicenta.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpeedyTalk.db" beforeDir="false" afterPath="$PROJECT_DIR$/SpeedyTalk.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Prefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Prefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/MessageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/PrefixRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/PrefixRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/doriangray.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatedDataSet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatedDataSet.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatedTestData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatedTestData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/MessageServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MessageServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatedDataSet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatedDataSet.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatedTestData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatedTestData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/markovModel/DataProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/markovModel/DataProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/markovModel/MarkovModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/markovModel/MarkovModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/converters/MessageConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/converters/MessageConverter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/PredictionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/Repository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/AutocompleteServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/AutocompleteServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/modelDTO/MessageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/modelDTO/MessageDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/JdbcUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/JdbcUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/MessageServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/MessageServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/MessageService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -109,34 +69,38 @@
     <session id="-1154644425">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
+          <entry key="project.closed" value="39" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.159" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.31" value="2" />
-          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="2" />
-          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.38" value="2" />
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.42" value="2" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.58" value="2" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.opened" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -146,54 +110,54 @@
           <entry key="JAVA/" value="1" />
           <entry key="JavaScript-modules-diagram/D:/an3/licenta/text_completion/backend/src/main/java/parameters;D:/an3/licenta/text_completion/backend/src/main/java/markovModel;" value="1" />
           <entry key="MarkovModel" value="2" />
-          <entry key="accuracy" value="15" />
-          <entry key="class" value="18" />
+          <entry key="accuracy" value="19" />
+          <entry key="class" value="19" />
           <entry key="config" value="1" />
           <entry key="fxml" value="1" />
-          <entry key="java" value="207" />
+          <entry key="java" value="232" />
           <entry key="largerTestData" value="4" />
-          <entry key="message" value="8" />
+          <entry key="message" value="20" />
           <entry key="messages" value="2" />
           <entry key="prefix" value="19" />
           <entry key="smol" value="2" />
           <entry key="sql" value="8" />
           <entry key="state" value="18" />
-          <entry key="txt" value="49" />
-          <entry key="user" value="5" />
+          <entry key="txt" value="50" />
+          <entry key="user" value="7" />
           <entry key="users" value="4" />
-          <entry key="xml" value="13" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
-          <entry key="Database Element" value="71" />
-          <entry key="JAVA" value="207" />
-          <entry key="PLAIN_TEXT" value="56" />
+          <entry key="CLASS" value="19" />
+          <entry key="Database Element" value="89" />
+          <entry key="JAVA" value="232" />
+          <entry key="PLAIN_TEXT" value="57" />
           <entry key="Scratch" value="8" />
           <entry key="UML" value="8" />
-          <entry key="XML" value="14" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="56" />
+          <entry key="cell" value="60" />
           <entry key="config" value="47" />
           <entry key="dummy" value="38" />
-          <entry key="java" value="16569" />
+          <entry key="java" value="16915" />
           <entry key="largerTestData" value="2" />
           <entry key="smol" value="68" />
-          <entry key="sql" value="222" />
+          <entry key="sql" value="234" />
           <entry key="txt" value="901" />
           <entry key="xml" value="135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16569" />
+          <entry key="JAVA" value="16915" />
           <entry key="PLAIN_TEXT" value="1056" />
-          <entry key="SQL" value="222" />
-          <entry key="Scratch" value="56" />
+          <entry key="SQL" value="234" />
+          <entry key="Scratch" value="60" />
           <entry key="XML" value="135" />
         </counts>
       </usages-collector>
@@ -201,65 +165,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/PredictionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/accuracy">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="165" column="24" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+            <state relative-caret-position="17">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Prefix.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -284,6 +212,8 @@
       <find>message</find>
       <find>elea</find>
       <find>Message</find>
+      <find>byte[]</find>
+      <find>jpa</find>
     </findStrings>
     <replaceStrings>
       <replace>Double</replace>
@@ -294,6 +224,7 @@
       <replace>message</replace>
       <replace>messageDTO</replace>
       <replace>Accuracy</replace>
+      <replace>String</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -304,7 +235,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/server/UserServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/smol" />
         <option value="$PROJECT_DIR$/src/main/java/model/MessageStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Inbox.java" />
@@ -326,12 +256,9 @@
         <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/State.java" />
         <option value="$PROJECT_DIR$/src/main/java/modelDTO/MessageReceivedDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/MessageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/converters/MessageConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/MessageServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/modelDTO/StateDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/converters/stateConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/converters/PrefixKeyConverter.java" />
@@ -344,14 +271,18 @@
         <option value="$PROJECT_DIR$/src/main/java/repository/PrefixRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Prefix.java" />
         <option value="$PROJECT_DIR$/src/main/java/converters/PrefixConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/Repository.java" />
         <option value="$PROJECT_DIR$/src/main/java/modelDTO/AccuracyDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/PredictionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/onedayatatime.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/MessageServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java" />
       </list>
     </option>
@@ -391,7 +322,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -452,6 +383,30 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="markovModel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -471,7 +426,7 @@
     <property name="ToolWindowCoverage.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561062239234" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562243760623" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -504,7 +459,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="backend" />
@@ -525,8 +480,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -574,6 +529,16 @@
       <workItem from="1560814491084" duration="736000" />
       <workItem from="1560846798519" duration="649000" />
       <workItem from="1560876525802" duration="45833000" />
+      <workItem from="1561313908228" duration="360000" />
+      <workItem from="1561314331019" duration="757000" />
+      <workItem from="1561755555330" duration="124000" />
+      <workItem from="1562059912540" duration="6003000" />
+      <workItem from="1562115432096" duration="2202000" />
+      <workItem from="1562186665426" duration="8361000" />
+      <workItem from="1574875159502" duration="671000" />
+      <workItem from="1574940163283" duration="1024000" />
+      <workItem from="1578139523729" duration="7477000" />
+      <workItem from="1578745200451" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="front - main display&#10;back - weak testing of model">
       <created>1559307076814</created>
@@ -600,10 +565,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192853000" />
+    <option name="totallyTimeSpent" value="220427000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Persistence" order="0" side_tool="true" weight="0.32967034" />
@@ -614,11 +579,11 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.2632375" />
+      <window_info content_ui="combo" id="Project" order="8" weight="0.35478806" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.32459018" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37704918" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34262297" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -637,7 +602,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.49766356" weight="0.37670198" />
+      <window_info anchor="right" id="Database" order="7" sideWeight="0.49766356" weight="0.22239032" />
       <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50233644" side_tool="true" weight="0.37367624" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
@@ -651,11 +616,11 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" visible="true" weight="0.20801815" />
+      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.19591528" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.40819672" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37704918" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34262297" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -674,7 +639,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.49766356" weight="0.14750378" />
+      <window_info active="true" anchor="right" id="Database" order="7" sideWeight="0.49766356" visible="true" weight="0.22239032" />
       <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50233644" side_tool="true" weight="0.37367624" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
@@ -693,16 +658,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="hibernate" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="message.sender" />
@@ -723,155 +678,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modelDTO/MessageReceivedDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/PrefixKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modelDTO/StateDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/StateRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="71" lean-forward="true" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/IRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modelDTO/PrefixDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/converters/MessageConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,9 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,23 +704,7 @@
         <state relative-caret-position="-51653" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/MessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/PredictionRepository.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -963,99 +754,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/PrefixRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/converters/PrefixConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-611">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/smol.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/smol.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Accuracy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1063,96 +773,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/message">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/AccuracyRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Prefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/prefix">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/state">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/prefix" />
+    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/state" />
     <entry file="uml://JAVA/markovModel.MarkovModel">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1169,11 +794,11 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0393393393393393" x="413.9999999999999" y="313.9208321294424" />
+          <settings layout="Hierarchic Group" zoom="1.0393393393393393" x="414.0" y="314.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Properties</Category>
             <Category>Methods</Category>
+            <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1193,12 +818,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="297.5" y="257.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="298.0" y="258.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1209,41 +835,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/PredictionService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Prefix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/AccuracyRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatedDataSet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200618">
-          <caret line="11292" column="76" selection-start-line="11292" selection-start-column="76" selection-end-line="11292" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="165" column="24" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
+        <state relative-caret-position="238">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/converters/MessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/modelDTO/MessageDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1251,6 +898,104 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/PrefixRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48bdcfed-37d9-4f04-a53a-8662045e8d76/schema/main/table/message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/PredictionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/AutocompleteServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatedDataSet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161092">
+          <caret line="11292" column="76" selection-start-line="11292" selection-start-column="76" selection-end-line="11292" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/MarkovModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/markovModel/DataProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>

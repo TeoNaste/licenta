@@ -15,7 +15,7 @@ public class MessageDTO implements Serializable {
     private String subject;
     private String text;
     private Date date;
-    private byte[] attachement;
+    private String attachement;
 
     public MessageDTO() { }
 
@@ -43,11 +43,11 @@ public class MessageDTO implements Serializable {
         this.date = date;
     }
 
-    public byte[] getAttachement() {
+    public String getAttachement() {
         return attachement;
     }
 
-    public void setAttachement(byte[] attachement) {
+    public void setAttachement(String attachement) {
         this.attachement = attachement;
     }
 

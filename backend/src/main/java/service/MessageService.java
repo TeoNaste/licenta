@@ -37,4 +37,18 @@ public class MessageService {
 
         messageRepository.save(newMessage);
     }
+
+    public MessageDTO getMessage(int id){
+        Message message = messageRepository.findOne(id);
+        return messageConverter.convertToDTO(message);
+    }
+
+    public List<MessageDTO> getMessagesFromUser(int idUser){
+        List<Message> messages = messageRepository.getMessagesByUser(idUser);
+        List<MessageDTO> dtos = new ArrayList<>();
+        messages.forEach(message -> {
+            dtos.add(messageConverter.convertToDTO(message));
+        });
+        return dtos;
+    }
 }
