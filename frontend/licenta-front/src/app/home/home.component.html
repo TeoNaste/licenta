@@ -1,0 +1,20 @@
+<div class="wrapper">
+<div class="container-fluid min-100 d-flex flex-column">
+  <div class="row no-gutters flex-fill">
+    <div class="side-menu col-4 affix">
+      <app-message-list (messageClicked)="messageClickedHandler($event)"></app-message-list>
+    </div>
+    <div class="routing-view col-8">
+    <div *ngIf="nothingSelected; else viewDetails" class="right-content">
+        <p>
+          No messages selected
+        </p>
+      </div>
+
+      <ng-template #viewDetails>
+          <router-outlet></router-outlet>
+      </ng-template>
+    </div>
+  </div>
+</div>
+</div>

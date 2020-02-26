@@ -1,0 +1,64 @@
+<div class="container">
+<form [formGroup]="newMessageForm" class="container" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+      <mat-label>To</mat-label>
+      <input 
+        matInput 
+        placeholder="To"
+        id="receiver"
+        formControlName ="receiver"
+        [(ngModel)]="receiver">
+        <mat-error *ngIf="hasError('receiver','required')">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Subject</mat-label>
+        <input 
+          matInput 
+          placeholder="Subject"
+          id="subject"
+          formControlName ="subject"
+          [(ngModel)]="subject">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput
+          cdkTextareaAutosize
+          #autosize ="cdkTextareaAutosize"
+          placeholder ="Write your text here..."
+          cdkAutosizeMinRows ="1"
+          cdkAutosizeMaxRows ="50"
+          id="text"
+          formControlName = "text"
+          [(ngModel)]="text"
+          [matAutocomplete]="auto"
+          (ngModelChange)="onChangeHandler()"></textarea>
+    </mat-form-field>
+    <mat-autocomplete #auto="matAutocomplete" >
+      <mat-option *ngFor="let option of options" [value]="getValue(option)" (click)="onSelectionClicked()">
+        {{option.value}}
+      </mat-option>
+    </mat-autocomplete>
+    <div class="fileAttach">
+        <input 
+          type="file" 
+          placeholder="Attachment"
+          id="attachment"
+          formControlName ="attachment"
+          [(ngModel)]="attachment"
+          (ngModelChange)="onFileSelected($event)"
+          #attachFile>
+    </div>
+
+    <div>
+      <button mat-icon-button type="button" (click)="attachFile.click()">
+        <mat-icon>attach_file</mat-icon>
+      </button>
+      <p>{{attachment}}</p>
+    </div>
+
+    <div class="buttons-container">
+      <button mat-raised-button type="button" color="warn" (click)="onCancel()">Cancel</button>
+      <button mat-raised-button type="submit" color="primary" [disabled]="!newMessageForm.valid">Send</button>
+    </div>
+    <p>{{confirmation}}</p>
+</form>
+</div>

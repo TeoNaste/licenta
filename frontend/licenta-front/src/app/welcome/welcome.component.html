@@ -1,0 +1,20 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="chat">
+      <div class="carousel-caption">
+        <h3>Chat together</h3>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="work">
+      <div class="carousel-caption">
+        <h3>Work together</h3>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="have fun">
+      <div class="carousel-caption">
+        <h3>Have fun together</h3>
+      </div>
+    </ng-template>
+  </ngb-carousel>

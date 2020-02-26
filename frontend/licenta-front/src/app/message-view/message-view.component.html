@@ -1,0 +1,28 @@
+<div class="container d-flex flex-column">
+  <div class="row">
+    <div class="col">
+      <small>From:</small><h5>{{message.sender.username}}</h5>
+      <small>Subject:</small><h5>{{message.subject}}</h5>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="row text">
+    <div class="col">
+      <p>{{message.text}} </p>
+    </div>
+  </div>
+  <div class="row" *ngIf="filename">
+    <div class="col">
+      <i class="material-icons">
+        attachment
+      </i>
+      <small>{{filename}}</small>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="row">
+    <div class="col">
+      <small>Sent on: {{message.date}}</small>
+    </div>
+  </div>
+</div>

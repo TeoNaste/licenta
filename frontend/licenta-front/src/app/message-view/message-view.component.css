@@ -1,0 +1,11 @@
+.container{
+    background-color: #c2cad0;
+    height: 100%;
+}
+ p{
+    font-size: 200%;
+ }
+
+ .text{
+     padding-top: 30px;
+ }

@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let message of messages " class="message">
+        <app-message-card [message]="message" (messageClicked)="messageClickedHandler($event)"></app-message-card>
+    </li>
+</ul>

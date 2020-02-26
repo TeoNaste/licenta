@@ -1,0 +1,19 @@
+
+mat-card{
+    height: 135px;
+    cursor: pointer;
+}
+
+.message-text{
+    max-height: 25px;
+    overflow: hidden;
+}
+
+.mat-card-footer div{
+    display: inline-flex;
+    align-content: center;
+}
+
+.message-date{
+    margin-left: 5px;
+}

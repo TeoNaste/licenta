@@ -1,0 +1,32 @@
+.container{
+    background-color: #c2cad0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+  
+.container > * {
+    width: 100%;
+}
+  
+.container form {
+    margin-bottom: 20px;
+}
+  
+.container form > * {
+    margin: 5px 0;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons-container button{
+    margin-right: 10px;
+    min-width: 100px;
+}
+
+.fileAttach{
+    display: none;
+}

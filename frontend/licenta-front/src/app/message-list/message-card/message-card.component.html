@@ -1,0 +1,17 @@
+<mat-card (click)="onClick()">
+  <mat-card-header>
+      <mat-card-title>{{message.subject}}</mat-card-title>
+      <mat-card-subtitle>From: {{message.sender.username}}</mat-card-subtitle>
+      <mat-card-subtitle>To: {{message.receiver}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-footer>
+    <div>
+      <p class="message-date">{{message.date}}</p>
+    </div>
+    <div>
+      <p *ngIf="hasAttachment"><i class="material-icons">
+      attachment
+      </i></p>
+    </div>
+  </mat-card-footer>
+</mat-card>
